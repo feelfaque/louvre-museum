@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Forum';
+  font-family: "Forum";
   font-weight: 400;
   src: url(../fonts/Forum/Forum-Regular.ttf);
   src: url(../fonts/Forum/Forum-Regular.woff);
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 400;
   src: url(../fonts/Roboto/Robotomedium.ttf);
   src: url(../fonts/Roboto/Robotomedium.woff);
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 300;
   src: url(../fonts/Roboto/Robotolight.ttf);
   src: url(../fonts/Roboto/Robotolight.woff);
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 100;
   src: url(../fonts/Roboto/Robotothin.ttf);
   src: url(../fonts/Roboto/Robotothin.woff);
@@ -39,7 +39,7 @@
 .header {
   padding: 74px 0 76px;
   background-color: #030303;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .header__content {
@@ -47,11 +47,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .logo {
@@ -59,8 +59,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .logo__icon {
@@ -68,7 +68,7 @@
 }
 
 .logo__title {
-  font-family: 'Forum', serif;
+  font-family: "Forum", serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 50px;
@@ -82,7 +82,7 @@
 
 .menu {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-size: 22px;
   letter-spacing: 2px;
@@ -94,8 +94,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .menu--row .menu__item:not(:last-of-type) {
@@ -116,12 +116,12 @@
   background-image: url("../img/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: right bottom;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .promo__subtitle {
   margin-bottom: 76px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 28px;
   font-weight: 300;
   letter-spacing: 2px;
@@ -137,11 +137,11 @@
   background-color: #710707;
   border: none;
   border-radius: 5px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 22px;
   font-weight: 100;
   letter-spacing: 2px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -150,11 +150,417 @@
 }
 
 .section__title {
-  font-family: 'Forum', serif;
+  font-family: "Forum", serif;
   font-weight: 400;
   font-size: 80px;
   line-height: 90px;
   letter-spacing: 5px;
   text-transform: uppercase;
+}
+
+.section--padding {
+  padding: 75px 0 75px;
+}
+
+.section__line {
+  border-width: 0;
+  height: 3px;
+  margin-bottom: 75px;
+  background-color: #710707;
+}
+
+.title--beige {
+  color: #9d8665;
+}
+
+.title--margin {
+  margin-bottom: 25px;
+}
+
+.tour__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr) [3];
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr [col-start]) [2];
+  grid-template-rows: repeat(2, 1fr [col-start]);
+  -webkit-column-gap: 60px;
+  column-gap: 60px;
+  row-gap: 78px;
+}
+
+.tour .card__img {
+  margin-bottom: 25px;
+}
+
+.tour .card__title {
+  margin-bottom: 9px;
+  font-family: Forum;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.tour .card__line {
+  margin-left: 0;
+  border-width: 0;
+  width: 300px;
+  height: 2px;
+  background-color: #710707;
+}
+
+.tour .card__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+.tour .card__text--big {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.tour .card__text--small {
+  font-size: 18px;
+}
+
+.picture {
+  background-color: #030303;
+  color: #ffffff;
+}
+
+.picture--flex {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.picture__content {
+  width: 46%;
+}
+
+.picture__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38.5px;
+}
+
+.picture__text--focused {
+  color: #9d8665;
+}
+
+.picture__text:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+
+.video {
+  padding: 90px 0 75px;
+}
+
+.video__img {
+  margin-bottom: 40px;
+}
+
+.video__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.video__text {
+  width: 50%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  color: #000000;
+}
+
+.tickets {
+  background-color: #030303;
+  color: #ffffff;
+}
+
+.tickets__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.tickets .form {
+  width: 46%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.tickets .form__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.tickets .form__container:not(:first-of-type) {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.tickets .form__container .input-amout__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.tickets .form__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.tickets .form__title--margin {
+  margin-bottom: 11px;
+}
+
+.tickets .form__input {
+  width: 270px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.tickets .form label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.tickets .form .input-group {
+  width: 150px;
+  height: 50px;
+  margin-top: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  border: 2px solid #ffffff;
+}
+
+.tickets .form .input-group [type="button"] {
+  width: 46px;
+  height: 46px;
+  background-color: #030303;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.tickets .form .input-group:first-of-type {
+  margin-bottom: 35px;
+}
+
+.tickets .form .input-group:not(:first-of-type) {
+  margin-bottom: 50px;
+}
+
+.tickets .form .quantity-field {
+  width: 46px;
+  height: 46px;
+  background-color: #030303;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.tickets .total-price {
+  margin-bottom: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 1.65px;
+}
+
+.tickets .buy__button {
+  width: 175px;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 2px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.contacts {
+  color: #000000;
+}
+
+.contacts__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.contacts .address__title {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.contacts .address__title:last-of-type {
+  margin-bottom: 36px;
+}
+
+.contacts .address__text {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.contacts .address__text:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.footer {
+  padding: 75px 0;
+  background-color: #030303;
+  color: #ffffff;
+}
+
+.footer .logo {
+  margin-right: 145px;
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.footer__menu {
+  width: 25%;
+  margin-right: 398px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer .footer__links {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.footer .links__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer .links__list .links__item:not(:last-of-type) {
+  margin-right: 24px;
+}
+
+.footer .links__list .links--round {
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: 1px solid #666666;
+}
+
+.footer .links__list .links--round:hover {
+  background-color: #666666;
 }
 /*# sourceMappingURL=style.css.map */
