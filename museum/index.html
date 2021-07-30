@@ -19,24 +19,24 @@
               alt="museum logo"
               class="logo__icon"
             />
-            <h2 class="logo__title">louvre</h2>
+            <h1 class="logo__title">louvre</h1>
           </a>
           <nav class="header__menu">
             <ul class="menu menu--row">
               <li class="menu__item">
-                <a href="#" class="menu__link">Visiting</a>
+                <a href="#visiting" class="menu__link">Visiting</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Explore</a>
+                <a href="#explore" class="menu__link">Explore</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Video</a>
+                <a href="#video" class="menu__link">Video</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Tickets</a>
+                <a href="#tickets" class="menu__link">Tickets</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Contacts</a>
+                <a href="#contacts" class="menu__link">Contacts</a>
               </li>
             </ul>
           </nav>
@@ -45,28 +45,36 @@
     </header>
 
     <main class="main">
-      <section class="promo">
+      <section class="welcome" id="welcome">
         <div class="wrapper">
-          <div class="promo__content">
-            <h1 class="section__title">
+          <div class="welcome__content">
+            <h2 class="section__title">
               Welcome<br />
               to the Louvre
-            </h1>
-            <h3 class="promo__subtitle">From the castle to the museum</h3>
-            <button class="promo__button">Discover the Louvre</button>
+            </h2>
+            <h3 class="welcome__subtitle">From the castle to the museum</h3>
+            <button
+              class="welcome__button"
+              onclick="document.location='https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736'"
+            >
+              Discover the Louvre
+            </button>
           </div>
         </div>
       </section>
 
-      <section class="tour section--padding">
+      <section class="visiting section--padding" id="visiting">
         <div class="wrapper">
           <h2 class="section__title title--beige title--margin">
             Virtual tour
           </h2>
           <hr class="section__line" />
-          <div class="tour__list">
-            <a href="#" class="card__link">
-              <div class="tour__card">
+          <div class="visiting__list">
+            <a
+              href="https://www.google.com/maps/@48.8606882,2.3356791,3a,90y,328.36h,87.55t/data=!3m7!1e1!3m5!1sAF1QipMZ9YgnArbwEIbTDANeSQYFu9gNqpW_2Sv8FBvY!2e10!3e12!7i4352!8i1815"
+              class="card__link"
+            >
+              <div class="visiting__card">
                 <img
                   src="./assets/img/royal-palace.jpg"
                   alt="Royal Palace"
@@ -80,8 +88,11 @@
                 </p>
               </div>
             </a>
-            <a href="#" class="card__link">
-              <div class="tour__card">
+            <a
+              href="https://www.google.com/maps/@48.8563254,2.3352706,3a,75y,90t/data=!3m7!1e1!3m5!1sAF1QipNRj_CwP4coDMYdCHj6qHeBeJpI2VxU5BUsOX4F!2e10!3e12!7i11000!8i5500"
+              class="card__link"
+            >
+              <div class="visiting__card">
                 <img
                   src="./assets/img/denon-wing.jpg"
                   alt="Denon Wing"
@@ -95,8 +106,11 @@
                 </p>
               </div>
             </a>
-            <a href="#" class="card__link">
-              <div class="tour__card">
+            <a
+              href="https://www.google.com/maps/@48.8601723,2.3395439,3a,88.4y,322.04h,84.25t/data=!3m7!1e1!3m5!1sAF1QipNMZGQuEA-pAUvIG_eP_2f3gWTKZEJ6XLVJ-Pgb!2e10!3e12!7i10240!8i5120"
+              class="card__link"
+            >
+              <div class="visiting__card">
                 <img
                   src="./assets/img/colonnade.jpg"
                   alt="Colonnade Perrault"
@@ -110,8 +124,11 @@
                 </p>
               </div>
             </a>
-            <a href="#" class="card__link">
-              <div class="tour__card">
+            <a
+              href="https://www.google.com/maps/@48.860183,2.3356156,3a,90y,177.69h,95.61t/data=!3m7!1e1!3m5!1sAF1QipP7uFZnTITRe-7AEVAgHAfqiCL-03gvBHcYWgF3!2e10!3e12!7i5472!8i2736"
+              class="card__link"
+            >
+              <div class="visiting__card">
                 <img
                   src="./assets/img/greek-hall.jpg"
                   alt="Greek hall"
@@ -125,8 +142,11 @@
                 </p>
               </div>
             </a>
-            <a href="#" class="card__link">
-              <div class="tour__card">
+            <a
+              href="https://www.google.com/maps/@48.8598788,2.3355157,3a,82.2y,7.53h,94t/data=!3m7!1e1!3m5!1sAF1QipO1wkUUbyzpPjj-OR0mR5etZJT-xl-40XK8rDQ3!2e10!3e12!7i10240!8i5120"
+              class="card__link"
+            >
+              <div class="visiting__card">
                 <img
                   src="./assets/img/mona-lisa.jpg"
                   alt="Mona Lisa"
@@ -140,8 +160,11 @@
                 </p>
               </div>
             </a>
-            <a href="#" class="card__link">
-              <div class="tour__card">
+            <a
+              href="https://www.google.com/maps/@48.8563254,2.3352706,3a,90y,21.26h,79.91t/data=!3m7!1e1!3m5!1sAF1QipPpGAowYatVyk3MMGnZAaQkYm2EUk-Dlca06SS5!2e10!3e12!7i11304!8i5652"
+              class="card__link"
+            >
+              <div class="visiting__card">
                 <img
                   src="./assets/img/night-palace.jpg"
                   alt="Night Palace"
@@ -159,23 +182,23 @@
         </div>
       </section>
 
-      <section class="picture section--padding">
+      <section class="explore section--padding" id="explore">
         <div class="wrapper">
-          <div class="picture--flex">
-            <div class="picture__content">
+          <div class="explore--flex">
+            <div class="explore__content">
               <h2 class="section__title title--white">Picture explore</h2>
               <hr class="section__line" />
-              <p class="picture__text">
+              <p class="explore__text">
                 Las Meninas is a 1656 painting by Diego Velázquez, the leading
                 artist of the Spanish Golden Age.
               </p>
-              <p class="picture__text">
+              <p class="explore__text">
                 It was cleaned in 1984 to remove a
-                <span class="picture__text--focused"> "yellow veil"</span> of
+                <span class="explore__text--focused"> "yellow veil"</span> of
                 dust that had gathered since the previous restoration in the
                 19th century.
               </p>
-              <p class="picture__text">
+              <p class="explore__text">
                 The cleaning provoked furious protests, not because the picture
                 had been damaged in any way, but because it looked different.
               </p>
@@ -190,13 +213,30 @@
         </div>
       </section>
 
-      <section class="video">
+      <section class="video" id="video">
         <div class="wrapper">
-          <img
-            src="./assets/img/video.jpg"
-            alt="film about museum"
-            class="video__img"
-          />
+          <video class="video__file" width="1440" height="629" controls>
+            <source src="./assets/video/au-louvre.mp4" type="video/mp4" />
+          </video>
+          <div class="controls">
+            <button class="back controls__button"></button>
+            <button class="play controls__button"></button>
+            <button class="forward controls__button"></button>
+            <input
+              type="range"
+              name="progressbar"
+              id="progressbar"
+              class="progressbar range"
+            />
+            <button class="mute controls__button"></button>
+            <input
+              type="range"
+              name="volumebar"
+              id="volumebar"
+              class="volumebar range"
+            />
+            <button class="fullscreen controls__button"></button>
+          </div>
           <div class="video__content">
             <h2 class="section__title title--beige">Video journey</h2>
             <p class="video__text">
@@ -207,7 +247,7 @@
         </div>
       </section>
 
-      <section class="tickets section--padding">
+      <section class="tickets section--padding" id="tickets">
         <div class="wrapper">
           <h2 class="section__title">Buy tickets</h2>
           <hr class="section__line" />
@@ -218,10 +258,11 @@
               class="section__image"
             />
             <form action="get" class="form">
-              <div class="form__container">
-                <h3 class="form__title">Ticket type</h3>
+              <fieldset class="form__container">
+                <legend class="form__title">Ticket type</legend>
                 <div class="form__input">
                   <input
+                    class="radio"
                     type="radio"
                     name="type"
                     id="permanent"
@@ -230,6 +271,7 @@
                 </div>
                 <div class="form__input">
                   <input
+                    class="radio"
                     type="radio"
                     name="type"
                     id="temporary"
@@ -238,16 +280,17 @@
                 </div>
                 <div class="form__input">
                   <input
+                    class="radio"
                     type="radio"
                     name="type"
                     id="combined"
                     value="Combined exhibition"
                   /><label for="combined">Combined Admission</label>
                 </div>
-              </div>
+              </fieldset>
 
-              <div class="form__container">
-                <h3 class="form__title form__title--margin">Amount</h3>
+              <fieldset class="form__container">
+                <legend class="form__title form__title--margin">Amount</legend>
 
                 <div class="input-amout__container">
                   <label for="basic">Basic 18+</label>
@@ -308,13 +351,13 @@
                 </div>
 
                 <input class="buy__button" type="submit" value="Buy Now" />
-              </div>
+              </fieldset>
             </form>
           </div>
         </div>
       </section>
 
-      <section class="contacts section--padding">
+      <section class="contacts section--padding" id="contacts">
         <div class="wrapper">
           <h2 class="section__title">Contacts</h2>
           <hr class="section__line" />
@@ -331,7 +374,7 @@
                 mail: <a href="mailto:info@louvre.fr">info@louvre.fr</a>
               </p>
             </div>
-            <img class="section__image" src="./assets/img/map.jpg" alt="map" />
+            <img class="section__image" src="./assets/img/map.png" alt="map" />
           </div>
         </div>
       </section>
@@ -352,25 +395,25 @@
           <nav class="footer__menu">
             <ul class="menu menu--column">
               <li class="menu__item">
-                <a href="#" class="menu__link">Welcome</a>
+                <a href="#welcome" class="menu__link">Welcome</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Visiting</a>
+                <a href="#visiting" class="menu__link">Visiting</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Explore</a>
+                <a href="#explore" class="menu__link">Explore</a>
               </li>
             </ul>
 
             <ul class="menu menu--column">
               <li class="menu__item">
-                <a href="#" class="menu__link">Video</a>
+                <a href="#video" class="menu__link">Video</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Tickets</a>
+                <a href="#tickets" class="menu__link">Tickets</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Contacts</a>
+                <a href="#contacts" class="menu__link">Contacts</a>
               </li>
             </ul>
           </nav>
@@ -378,7 +421,10 @@
           <div class="footer__links">
             <ul class="links__list">
               <li class="links__item">
-                <a href="#" class="footer__link">
+                <a
+                  href="https://www.youtube.com/user/louvre"
+                  class="footer__link"
+                >
                   <div class="links--round">
                     <img
                       src="./assets/icons/yt.svg"
@@ -389,7 +435,10 @@
                 </a>
               </li>
               <li class="links__item">
-                <a href="#" class="footer__link">
+                <a
+                  href="https://www.instagram.com/museelouvre/"
+                  class="footer__link"
+                >
                   <div class="links--round">
                     <img
                       src="./assets/icons/insta.svg"
@@ -400,7 +449,10 @@
                 </a>
               </li>
               <li class="links__item">
-                <a href="#" class="footer__link">
+                <a
+                  href="https://www.facebook.com/museedulouvre"
+                  class="footer__link"
+                >
                   <div class="links--round">
                     <img
                       src="./assets/icons/fb.svg"
@@ -411,7 +463,7 @@
                 </a>
               </li>
               <li class="links__item">
-                <a href="#" class="footer__link">
+                <a href="http://twitter.com/museelouvre" class="footer__link">
                   <div class="links--round">
                     <img
                       src="./assets/icons/twitter.svg"
@@ -422,7 +474,10 @@
                 </a>
               </li>
               <li class="links__item">
-                <a href="#" class="footer__link">
+                <a
+                  href="https://www.pinterest.fr/museedulouvre/"
+                  class="footer__link"
+                >
                   <div class="links--round">
                     <img
                       src="./assets/icons/pinterest.svg"
@@ -437,5 +492,6 @@
         </div>
       </div>
     </footer>
+    <script src="./assets/scripts/progressbar.js"></script>
   </body>
 </html>

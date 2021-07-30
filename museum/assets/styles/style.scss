@@ -34,6 +34,10 @@ $bg-dark: #030303;
 $dark-red: #710707;
 $font-gold: #9d8665;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   width: 90%;
   max-width: 1440px;
@@ -92,12 +96,12 @@ $font-gold: #9d8665;
   }
 }
 
-.promo {
+.welcome {
   padding: 114px 0 246px;
   background-color: $bg-dark;
   background-image: url("../img/hero-bg.jpg");
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: calc(50% + 350px);
   color: #ffffff;
   &__subtitle {
     margin-bottom: 76px;
@@ -157,7 +161,7 @@ $font-gold: #9d8665;
   }
 }
 
-.tour {
+.visiting {
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -165,6 +169,11 @@ $font-gold: #9d8665;
     column-gap: 60px;
     row-gap: 78px;
   }
+
+  &__card:hover .card__line {
+    width: 440px;
+    transition: all .2s ease-in-out;
+  } 
   .card {
     &__img {
       margin-bottom: 25px;
@@ -187,6 +196,7 @@ $font-gold: #9d8665;
       width: 300px;
       height: 2px;
       background-color: $dark-red;
+      transition: all .2s ease-in-out;
     }
 
     &__text {
@@ -204,7 +214,7 @@ $font-gold: #9d8665;
   }
 }
 
-.picture {
+.explore {
   background-color: $bg-dark;
   color: #ffffff;
   &--flex {
@@ -215,7 +225,7 @@ $font-gold: #9d8665;
   }
 
   &__content {
-    width: 46%;
+    width: 45.6%;
   }
 
   &__text {
@@ -236,16 +246,80 @@ $font-gold: #9d8665;
 
 .video {
   padding: 90px 0 75px;
-
-  &__img {
-    margin-bottom: 40px;
-  }
-
   &__content {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .controls {
+    max-width: 1440px;
+    height: 85px;
+    margin: -5px 0 40px;
+    padding: 0 25px 0;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+
+    &__button {
+      height: 55px;
+      width: 55px;
+      background-color: inherit;
+      background-position: center;
+      background-repeat: no-repeat;
+      border: none;
+      cursor: pointer;
+    }
+
+    .back {
+      background-image: url("../icons/back.svg");
+      margin-right: 7px;
+    }
+
+    .play {
+      background-image: url("../icons/play.svg");
+      margin-right: 7px;
+    }
+
+    .forward {
+      background-image: url("../icons/forward.svg");
+      margin-right: 35px;
+    }
+
+    .mute {
+      background-image: url("../icons/sound.svg");
+      margin-right: 20px;
+    }
+
+    .fullscreen {
+      background-image: url("../icons/fullscreen.svg");
+    }
+    
+    .range {
+      height: 8px;
+      appearance: none;
+      background: linear-gradient(to right, #24809E 0%, #24809E 40%, #C4C4C4 40%, #C4C4C4 100%);
+      outline: none;
+      transition: background 450ms ease-in;
+      &::-webkit-slider-thumb {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        appearance: none;
+        cursor: ew-resize;
+        background: #FFFFFF;
+      }
+    }
+    .progressbar {
+      width: 820px;
+      margin-right: 40px;
+    }
+
+    .volumebar {
+      width: 155px;
+      margin-right: 48px;
+    }
   }
 
   &__text {
@@ -278,6 +352,7 @@ $font-gold: #9d8665;
     &__container {
       display: flex;
       flex-direction: column;
+      border: none;
 
       &:not(:first-of-type) {
         align-items: flex-end;
@@ -307,6 +382,20 @@ $font-gold: #9d8665;
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    .radio {
+      width: 17px;
+      height: 17px;
+      appearance: none;
+      border-radius: 50%;
+      border: 2px solid #FFFFFF;
+      background: $bg-dark;
+      cursor: pointer;
+
+      &:checked {
+        background-color: #FFFFFF;
+      }
     }
 
     label {
@@ -358,6 +447,12 @@ $font-gold: #9d8665;
       line-height: 26px;
       text-align: center;
       color: #ffffff;
+
+      &::-webkit-inner-spin-button, 
+      &::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+      }
     }
   }
 
@@ -375,12 +470,16 @@ $font-gold: #9d8665;
     height: 50px;
     background: #ffffff;
     border-radius: 2px;
+    border: none;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 22px;
     letter-spacing: 2px;
     color: #000000;
     cursor: pointer;
+    &:hover {
+      background-color: $font-gold;
+    }
   }
 }
 
@@ -460,7 +559,8 @@ $font-gold: #9d8665;
     }
 
     .links--round:hover {
-      background-color: #666666;
+      background-color: $font-gold;
+      border: 1px solid $font-gold;
     }
   }
 }
